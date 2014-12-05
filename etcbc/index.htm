@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="stylesheets/main.css" />
+    <title>East Toronto Chinese Baptist Church</title>
+  </head>
+
+<!-- General guidelines for mark-up use -->
+<!--
+ h1: Only used for banner header text
+ h2: h1 subtext (only makes sense right?), Div block header
+ h3: Announcement header? 
+ h4:
+ h5:
+ h6: Not used
+-->
+
+  <body>
+    <!-- Not sure if full-container is necessary -->
+    <div id="main">
+      <div id="header">
+
+        <div id="nav">
+          <ul>
+            <li>Location</li>
+            <li>Announcements</li>
+            <li>Teachings</li>
+            <li>Programs</li>
+          </ul>
+        </div>
+      </div> <!-- id: header -->
+
+<!--  General idea is to max out 5 vertical containers, excluding the banner -->
+      <div id="banner">
+        <h1>East Toronto Chinese Baptist Church<h1>
+        <h2 class="quote">Cultivating a community that fully responds to God</h2>
+      </div> <!-- id: banner -->
+
+      <div id="main-location">
+        <h2>Location</h2> 
+        <p>Sample text here</p>
+        <div id="map"><!-- iframe info here? --></div>
+      </div> <!-- id: main-location" -->
+
+<!--  Here, we want each announcement in its own paragraph tag, but JS should somehow let to flow horizontally? -->
+      <div id="main-announcements">
+        <h2>Announcements</h2>
+        <p class="announcement"> <h3>announcement title1</h3> <p>rest of text</p></p>
+        <p class="announcement"> <h3>announcement title2</h3> <p>rest of text</p></p>
+        <p class="announcement"> <h3>announcement title3</h3> <p>rest of text</p></p>
+      </div> <!-- id:main-announcements -->
+
+      <div id="main-teachings">
+        <h2>Teachings</h2>
+        <p>Sample text here</p>
+      </div> <!-- id: main-teachings" -->
+
+      <div id="main-programs">
+        <h2>Programs</h2>
+        <p>Sample text here</p>
+      </div> <!-- id: main-teachings" -->
+
+    </div> <!-- id: main -->
+  </body>
+</html>
+
