@@ -1,0 +1,12 @@
+#main {
+ /* overall page design */
+ min-width: 700px;
+}
+
+h1 {
+ min-width: 900px;
+}
+
+#nav {
+  text-align: center;
+}
