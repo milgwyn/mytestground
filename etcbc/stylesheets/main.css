@@ -1,13 +1,165 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
+  color: #6D6D6D;
+  text-align: center;
+  margin:0;
+  padding:0;
+}
+
+a {
+  text-decoration: none;
+  color: #6D6D6D;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #363636;
+}
+
 #main {
  /* overall page design */
- min-width: 700px;
+ 
 }
 
-h1 {
- min-width: 900px;
+.column-left {
+  width: 33%;
+  float: left;
 }
+.column-right {
+  width: 33%;
+  float: right;
+}
+.column-centre {
+  width: 33%;
+  display: inline-block;
+}
+
+/************
+ *
+ * News
+ *
+ ************/
+
+#main-news {
+  background-color: rgba(200,255,180,0.5);
+  padding-top: 20px; /* will this be common to all? */
+  clear: both; /* will this be common to all? */
+}
+
+#news-scroller {
+  width: 600px;
+  height: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+
+.news {
+  width: 600px;
+}
+
+
+/************
+ *
+ * Location 
+ *
+ ************/
+
+#main-location {
+  height: 300px; /* should be automatic */
+}
+
+.address {
+  text-align: left;
+  padding-left: auto;
+  padding-right: auto; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  
+/************
+ *
+ * Banner 
+ *
+ ************/
+
+#banner {
+  padding-top:100px; /* to push start down */
+  background-image: url("../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  height: 360px; /* height is photo - padding-top */
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#banner h1 {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 150%;
+  letter-spacing: 0.15em;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#banner h2 {
+  text-transform: lowercase;
+  font-style: oblique;
+  padding-left: 20%;
+}
+
+
+/************
+ *
+ * Navigation
+ *
+ ************/
 
 #nav {
-  text-align: center;
+  /* position: fixed;*/ /* don't start float until everything works */
+  width: 100%;
+  text-align: center; /* will be inherited by child elements */
+  background-color: rgba(255, 255, 255, 1.0); /* pre-emptive as this will be a fixed container later */
+  display: inline;
+  /* box-shadow: 0 4px 2px -2px gray; */
 }
-/* local */
+
+#nav img {
+  float: left; /* remove at x width */
+  /* actually, clear if #nav ul height > 35px */
+  height: 30px;
+  width: 150px;
+}
+
+#nav .navicon {
+  margin:0;
+}
+
+#nav ul {
+  list-style: none; /* remove the bullet points */
+  height: auto; /* allows it to expand for smaller displays */
+  line-height: 35px;
+}
+
+#nav ul li {
+  display: inline;  /* remove at x width */
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.10em;
+
+}
+
+#nav ul li a:hover {
+  text-decoration: none; /* override for typical hover */
+}
+
