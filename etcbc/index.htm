@@ -1,103 +1,138 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="stylesheets/main.css" />
-    <title>East Toronto Chinese Baptist Church</title>
-  </head>
+   <head>
+      <link rel="stylesheet" href="stylesheets/main.css" />
+      <title>East Toronto Chinese Baptist Church</title>
+   </head>
 
-<!-- 
-
-// General guidelines for mark-up use
- h1: Only used for banner header text
- h2: h1 subtext (only makes sense right?), Div block header
- h3: Announcement header? 
- h4:
- h5:
- h6: Not used
--->
-
-  <body>
-    <!-- Not sure if full-container is necessary -->
-        <div id="nav">
-          <ul>
+   <body>
+      <div id="nav">
+         <ul>
             <li class="navicon"><img /></li>
             <li><a href="#main-location">Location</a></li>
             <li><a href="#main-news">News</a></li>
             <li><a href="#main-teachings">Teachings</a></li>
             <li><a href="#main-programs">Programs</a></li>
-          </ul>
-        </div>
+         </ul>
+      </div>
 
-<!--  General idea is to max out 5 vertical containers, excluding the banner -->
       <div id="banner">
-        <h1>East Toronto Chinese Baptist Church</h1>
-        <h2 class="quote">Cultivating a community that fully responds to God</h2>
+         <h1>East Toronto Chinese Baptist Church</h1>
+         <h2 class="quote">Cultivating a community that fully responds to God</h2>
       </div> <!-- id: banner -->
 
       <div id="main-location">
-        <p class="column address">
-22 Carnforth Road <br />
-North York, Ontario <br />
-Canada, M4A 2K7 <br />
-<br />
-Phone: (416) 615-2204  <br />
-Email: info@etcbc.org <br />
-Web team: web@etcbc.org <br />
-        </p>
-        <table class="column">
-          <tr>
-            <th class="table-header" colspan="2" >Our Schedule</th>
-          </tr>
-          <tr>
-            <th>Worship</th>
-            <td>10:00am</th>
-          </tr>
-          <tr>
-            <th>Children's Worship</th>
-            <td>10:00am</th>
-          </tr>
-          <tr>
-            <th>Sunday School</th>
-            <td>11:45am</th>
-          </tr>
-        </table>
-<iframe class="column" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2882.5628065241563!2d-79.3152769!3d43.7404083!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cd8cf944526b%3A0x29f45edb3dbf0e88!2s22+Carnforth+Rd%2C+North+York%2C+ON+M4A+2K7!5e0!3m2!1sen!2sca!4v1417930667762" width="200" height="200" frameborder="0" style="border:0"></iframe>
+         <p class="column address">
+            22 Carnforth Road <br />
+            North York, Ontario <br />
+            Canada, M4A 2K7 <br />
+            <br />
+            Phone: (416) 615-2204  <br />
+            Email: info@etcbc.org <br />
+            Web team: web@etcbc.org <br />
+         </p>
+         <table class="column">
+            <tr>
+               <th class="table-header" colspan="2" >Our Schedule</th>
+            </tr>
+            <tr>
+               <th>Worship</th>
+               <td>10:00am</th>
+            </tr>
+            <tr>
+               <th>Children's Worship</th>
+               <td>10:00am</th>
+            </tr>
+            <tr>
+               <th>Sunday School</th>
+               <td>11:45am</th>
+            </tr>
+         </table>
+         <iframe class="column" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2882.5628065241563!2d-79.3152769!3d43.7404083!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cd8cf944526b%3A0x29f45edb3dbf0e88!2s22+Carnforth+Rd%2C+North+York%2C+ON+M4A+2K7!5e0!3m2!1sen!2sca!4v1417930667762" width="200" height="200" frameborder="0" style="border:0"></iframe>
       </div> <!-- id: main-location" -->
 
-<!--  Here, we want each announcement in its own paragraph tag, but JS should somehow let to flow horizontally? -->
+      <!--  Here, we want each announcement in its own paragraph tag, 
+            but JS should somehow let to flow horizontally? -->
       <div id="main-news" style="clear:both;">
-        <h2>Announcements</h2>
-  <div id="news-scroller">
-        <table class="newsbox">
-          <tr>
-            <td>
-        <p class="news"> <h3>News Title #1</h3> 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id nulla nec nulla tristique consequat. Nunc commodo lorem non lorem congue laoreet. Donec maximus egestas mauris et ultricies. Donec ullamcorper lectus quis mi feugiat condimentum. Nunc faucibus rhoncus erat ac posuere. Phasellus lacinia leo vehicula, tempus nisl sagittis, finibus eros. Suspendisse arcu nisi, posuere sed consequat eu, tristique vitae justo. Donec id ornare lectus. Suspendisse semper eleifend dictum. Vestibulum tortor ante, tincidunt in ante sit amet, gravida iaculis tortor. Donec mollis eros eu tellus malesuada, placerat laoreet dui auctor. Aliquam pretium, nisl quis ornare varius, tellus ligula consectetur massa, ut interdum mauris dui in quam. Mauris vel mauris id sem rhoncus ultrices vitae et quam. Nullam sit amet ipsum id dolor faucibus lobortis.</p></p>
-</td>
-<td>
-        <p class="news"> <h3>News Title #2</h3> 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id nulla nec nulla tristique consequat. Nunc commodo lorem non lorem congue laoreet. Donec maximus egestas mauris et ultricies. Donec ullamcorper lectus quis mi feugiat condimentum. Nunc faucibus rhoncus erat ac posuere. Phasellus lacinia leo vehicula, tempus nisl sagittis, finibus eros. Suspendisse arcu nisi, posuere sed consequat eu, tristique vitae justo. Donec id ornare lectus. Suspendisse semper eleifend dictum. Vestibulum tortor ante, tincidunt in ante sit amet, gravida iaculis tortor. Donec mollis eros eu tellus malesuada, placerat laoreet dui auctor. Aliquam pretium, nisl quis ornare varius, tellus ligula consectetur massa, ut interdum mauris dui in quam. Mauris vel mauris id sem rhoncus ultrices vitae et quam. Nullam sit amet ipsum id dolor faucibus lobortis.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id nulla nec nulla tristique consequat. Nunc commodo lorem non lorem congue laoreet. Donec maximus egestas mauris et ultricies. Donec ullamcorper lectus quis mi feugiat condimentum. Nunc faucibus rhoncus erat ac posuere. Phasellus lacinia leo vehicula, tempus nisl sagittis, finibus eros. Suspendisse arcu nisi, posuere sed consequat eu, tristique vitae justo. Donec id ornare lectus. Suspendisse semper eleifend dictum. Vestibulum tortor ante, tincidunt in ante sit amet, gravida iaculis tortor. Donec mollis eros eu tellus malesuada, placerat laoreet dui auctor. Aliquam pretium, nisl quis ornare varius, tellus ligula consectetur massa, ut interdum mauris dui in quam. Mauris vel mauris id sem rhoncus ultrices vitae et quam. Nullam sit amet ipsum id dolor faucibus lobortis.</p></p>
-</td>
-<td>
-        <p class="news"> <h3>News Title #3</h3> 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id nulla nec nulla tristique consequat. Nunc commodo lorem non lorem congue laoreet. Donec maximus egestas mauris et ultricies. Donec ullamcorper lectus quis mi feugiat condimentum. Nunc faucibus rhoncus erat ac posuere. Phasellus lacinia leo vehicula, tempus nisl sagittis, finibus eros. Suspendisse arcu nisi, posuere sed consequat eu, tristique vitae justo. Donec id ornare lectus. Suspendisse semper eleifend dictum. Vestibulum tortor ante, tincidunt in ante sit amet, gravida iaculis tortor. Donec mollis eros eu tellus malesuada, placerat laoreet dui auctor. Aliquam pretium, nisl quis ornare varius, tellus ligula consectetur massa, ut interdum mauris dui in quam. Mauris vel mauris id sem rhoncus ultrices vitae et quam. Nullam sit amet ipsum id dolor faucibus lobortis.</p></p>
-</td>
-</tr>
-</table>
-</div>
+         <h2>Announcements</h2>
+         <div id="news-scroller">
+            <table class="newsbox">
+               <tr>
+                  <td>
+                     <p class="news"> 
+                        <h3>News Title #1</h3> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id nulla nec nulla tristique consequat. Nunc commodo lorem non lorem congue laoreet. Donec maximus egestas mauris et ultricies. Donec ullamcorper lectus quis mi feugiat condimentum. Nunc faucibus rhoncus erat ac posuere. Phasellus lacinia leo vehicula, tempus nisl sagittis, finibus eros. Suspendisse arcu nisi, posuere sed consequat eu, tristique vitae justo. Donec id ornare lectus. Suspendisse semper eleifend dictum. Vestibulum tortor ante, tincidunt in ante sit amet, gravida iaculis tortor. Donec mollis eros eu tellus malesuada, placerat laoreet dui auctor. Aliquam pretium, nisl quis ornare varius, tellus ligula consectetur massa, ut interdum mauris dui in quam. Mauris vel mauris id sem rhoncus ultrices vitae et quam. Nullam sit amet ipsum id dolor faucibus lobortis.</p>
+                     </p>
+                  </td>
+                  <td>
+                     <p class="news"> 
+                        <h3>News Title #2</h3> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id nulla nec nulla tristique consequat. Nunc commodo lorem non lorem congue laoreet. Donec maximus egestas mauris et ultricies. Donec ullamcorper lectus quis mi feugiat condimentum. Nunc faucibus rhoncus erat ac posuere. Phasellus lacinia leo vehicula, tempus nisl sagittis, finibus eros. Suspendisse arcu nisi, posuere sed consequat eu, tristique vitae justo. Donec id ornare lectus. Suspendisse semper eleifend dictum. Vestibulum tortor ante, tincidunt in ante sit amet, gravida iaculis tortor. Donec mollis eros eu tellus malesuada, placerat laoreet dui auctor. Aliquam pretium, nisl quis ornare varius, tellus ligula consectetur massa, ut interdum mauris dui in quam. Mauris vel mauris id sem rhoncus ultrices vitae et quam. Nullam sit amet ipsum id dolor faucibus lobortis.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id nulla nec nulla tristique consequat. Nunc commodo lorem non lorem congue laoreet. Donec maximus egestas mauris et ultricies. Donec ullamcorper lectus quis mi feugiat condimentum. Nunc faucibus rhoncus erat ac posuere. Phasellus lacinia leo vehicula, tempus nisl sagittis, finibus eros. Suspendisse arcu nisi, posuere sed consequat eu, tristique vitae justo. Donec id ornare lectus. Suspendisse semper eleifend dictum. Vestibulum tortor ante, tincidunt in ante sit amet, gravida iaculis tortor. Donec mollis eros eu tellus malesuada, placerat laoreet dui auctor. Aliquam pretium, nisl quis ornare varius, tellus ligula consectetur massa, ut interdum mauris dui in quam. Mauris vel mauris id sem rhoncus ultrices vitae et quam. Nullam sit amet ipsum id dolor faucibus lobortis.</p>
+                     </p>
+                  </td>
+                  <td>
+                     <p class="news"> 
+                        <h3>News Title #3</h3> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id nulla nec nulla tristique consequat. Nunc commodo lorem non lorem congue laoreet. Donec maximus egestas mauris et ultricies. Donec ullamcorper lectus quis mi feugiat condimentum. Nunc faucibus rhoncus erat ac posuere. Phasellus lacinia leo vehicula, tempus nisl sagittis, finibus eros. Suspendisse arcu nisi, posuere sed consequat eu, tristique vitae justo. Donec id ornare lectus. Suspendisse semper eleifend dictum. Vestibulum tortor ante, tincidunt in ante sit amet, gravida iaculis tortor. Donec mollis eros eu tellus malesuada, placerat laoreet dui auctor. Aliquam pretium, nisl quis ornare varius, tellus ligula consectetur massa, ut interdum mauris dui in quam. Mauris vel mauris id sem rhoncus ultrices vitae et quam. Nullam sit amet ipsum id dolor faucibus lobortis.</p>
+                     </p>
+                  </td>
+               </tr>
+            </table>
+         </div>
       </div> <!-- id:main-announcements -->
 
       <div id="main-teachings">
-        <h2>Teachings</h2>
-        <p>Sample text here</p>
+         <h2>Teachings</h2>
+         <p>Sample text here</p>
       </div> <!-- id: main-teachings" -->
 
       <div id="main-programs">
-        <h2>Programs</h2>
-        <p>Sample text here</p>
+         <h2>Programs</h2>
+         <div id="program-scroller">
+            <table class="programbox">
+               <tr>
+                  <td>
+                     <p class="program"> 
+                        <h3>Children's Ministry</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id nulla nec nulla tristique consequat. Nunc commodo lorem non lorem congue laoreet. Donec maximus egestas mauris et ultricies. Donec ulla mcorper lectus quis mi feugiat condimentum. Nunc faucibus rhoncus erat ac posuere. Phasellus lacinia leo vehicula, tempus nisl sagittis, finibus eros. Suspendisse arcu nisi, posuere sed consequat eu, tris tique vitae justo. Donec id ornare lectus. Suspendisse semper eleifend dictum. Vestibulum tortor ante, tincidunt in ante sit amet, gravida iaculis tortor. Donec mollis eros eu tellus malesuada, placerat l aoreet dui auctor. Aliquam pretium, nisl quis ornare varius, tellus ligula consectetur massa, ut interdum mauris dui in quam. Mauris vel mauris id sem rhoncus ultrices vitae et quam. Nullam sit amet ipsum id dolor faucibus lobortis.</p>
+                     </p>
+                  </td>
+                  <td>
+                     <p class="program"> 
+                        <h3>Youth Ministries</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id nulla nec nulla tristique consequat. Nunc commodo lorem non lorem congue laoreet. Donec maximus egestas mauris et ultricies. Donec ulla mcorper lectus quis mi feugiat condimentum. Nunc faucibus rhoncus erat ac posuere. Phasellus lacinia leo vehicula, tempus nisl sagittis, finibus eros. Suspendisse arcu nisi, posuere sed consequat eu, tris tique vitae justo. Donec id ornare lectus. Suspendisse semper eleifend dictum. Vestibulum tortor ante, tincidunt in ante sit amet, gravida iaculis tortor. Donec mollis eros eu tellus malesuada, placerat l aoreet dui auctor. Aliquam pretium, nisl quis ornare varius, tellus ligula consectetur massa, ut interdum mauris dui in quam. Mauris vel mauris id sem rhoncus ultrices vitae et quam. Nullam sit amet ipsum id dolor faucibus lobortis.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id nulla nec nulla tristique consequat. Nunc commodo lorem non lorem congue laoreet. Donec maximus egestas mauris et ultricies. Donec ulla mcorper lectus quis mi feugiat condimentum. Nunc faucibus rhoncus erat ac posuere. Phasellus lacinia leo vehicula, tempus nisl sagittis, finibus eros. Suspendisse arcu nisi, posuere sed consequat eu, tris tique vitae justo. Donec id ornare lectus. Suspendisse semper eleifend dictum. Vestibulum tortor ante, tincidunt in ante sit amet, gravida iaculis tortor. Donec mollis eros eu tellus malesuada, placerat l aoreet dui auctor. Aliquam pretium, nisl quis ornare varius, tellus ligula consectetur massa, ut interdum mauris dui in quam. Mauris vel mauris id sem rhoncus ultrices vitae et quam. Nullam sit amet ipsum id dolor faucibus lobortis.</p>
+                     </p>
+                  </td>
+                  <td>
+                     <p class="program"> 
+                        <h3>Hash Run Ministries</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id nulla nec nulla tristique consequat. Nunc commodo lorem non lorem congue laoreet. Donec maximus egestas mauris et ultricies. Donec ulla mcorper lectus quis mi feugiat condimentum. Nunc faucibus rhoncus erat ac posuere. Phasellus lacinia leo vehicula, tempus nisl sagittis, finibus eros. Suspendisse arcu nisi, posuere sed consequat eu, tris tique vitae justo. Donec id ornare lectus. Suspendisse semper eleifend dictum. Vestibulum tortor ante, tincidunt in ante sit amet, gravida iaculis tortor. Donec mollis eros eu tellus malesuada, placerat l aoreet dui auctor. Aliquam pretium, nisl quis ornare varius, tellus ligula consectetur massa, ut interdum mauris dui in quam. Mauris vel mauris id sem rhoncus ultrices vitae et quam. Nullam sit amet ipsum id dolor faucibus lobortis.</p>
+                     </p>
+                  </td>
+               </tr>
+            </table>
+         </div>
       </div> <!-- id: main-teachings" -->
 
-  </body>
+      <div id="footer">
+         <div class="column"> 
+            <p>Some text here</p>
+         </div>
+
+         <div class="column"> 
+            <!-- site map here -->
+            <ul>
+               <li class="header">ETCBC</li>
+               <li>Sunday School Files</li>
+               <li>Annual Report</li>
+               <li>Missionary Support?</li>
+            </ul>
+         </div>
+         <div class="column"> </div>
+      </div> <!-- id: footer" -->
+   </body>
+
 </html>
 

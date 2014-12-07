@@ -38,6 +38,7 @@ a:hover {
 
 #main-news {
   background-color: rgba(200,255,180,0.5);
+  background-color: rgba(235,255,230,1.0);
   padding-top: 20px; /* will this be common to all? */
   clear: both; /* will this be common to all? */
 }
@@ -63,6 +64,41 @@ a:hover {
 
 .news {
   width: 600px;
+}
+
+/************
+ *
+ * Program 
+ *
+ ************/
+
+#main-program {
+  background-color: rgba(200,255,180,0.5);
+  padding-top: 20px; /* will this be common to all? */
+  clear: both; /* will this be common to all? */
+}
+
+#program-scroller {
+  width: 80%;
+  height: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  vertical-align: top;
+}
+
+.programbox td {
+  vertical-align: top;
+}
+
+.programbox td p {
+  text-align: left;
+}
+
+
+.program {
+  width: 60%;
 }
 
 
@@ -190,3 +226,29 @@ a:hover {
   text-decoration: none; /* override for typical hover */
 }
 
+/************
+ *
+ * Footer
+ *
+ ************/
+
+#footer {
+  width: 100%;
+  height: 200px;
+  padding-top: 20px;
+  background-color: rgba(38, 38, 38, 0.9);
+  color: rgba( 220, 220, 220, 0.8);
+  font-size: 300;
+}
+
+#footer ul {
+  text-align: left;
+  list-style: none;
+  font-weight: 300;
+  margin-bottom: 2px;
+}
+
+#footer li.header {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
