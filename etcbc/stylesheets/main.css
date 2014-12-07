@@ -1,3 +1,4 @@
+/* 392px seems to be the minimum width */
 body {
   font-family: "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
   color: #6D6D6D;
@@ -21,17 +22,12 @@ a:hover {
  
 }
 
-.column-left {
-  width: 33%;
-  float: left;
-}
-.column-right {
-  width: 33%;
-  float: right;
-}
-.column-centre {
-  width: 33%;
-  display: inline-block;
+.column {
+  /*padding: 5px, 10px, 5px, 10px;*/
+  padding-left: 1%;
+  padding-right: 1%;
+  width: 31%;
+  float: left; /* remove if width < x */
 }
 
 /************
@@ -48,16 +44,28 @@ a:hover {
 
 #news-scroller {
   width: 600px;
-  height: 480px;
+  height: 280px;
   margin-left: auto;
   margin-right: auto;
   overflow-x: scroll;
   overflow-y: scroll;
+  vertical-align: top;
 }
+
+.newsbox td {
+  vertical-align: top;
+}
+
+.newsbox td p {
+  text-align: left;
+}
+
 
 .news {
   width: 600px;
 }
+
+
 
 
 /************
@@ -67,15 +75,34 @@ a:hover {
  ************/
 
 #main-location {
-  height: 300px; /* should be automatic */
+  overflow: auto;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+#main-location p {
+/* a bit of a hack..  to add to 31% */
+  width: 21%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#main-location table {
+  margin: 10px auto 0 auto; /* center div */
+}
+
+#main-location iframe {
+  float: right;
+}
+
+.table-header {
+  border-bottom-width: 1px;
+  border-bottom: salmon;
+  border-bottom-style: solid;
 }
 
 .address {
   text-align: left;
-  padding-left: auto;
-  padding-right: auto; 
-  margin-left: auto;
-  margin-right: auto;
 }
 
   
