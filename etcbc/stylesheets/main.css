@@ -72,34 +72,55 @@ a:hover {
  *
  ************/
 
-#main-program {
-  background-color: rgba(200,255,180,0.5);
+#main-programs {
   padding-top: 20px; /* will this be common to all? */
   clear: both; /* will this be common to all? */
+
+  width: 100%;
+  overflow: auto; /* prevents footer from inching up */
 }
 
-#program-scroller {
-  width: 80%;
-  height: 280px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow-x: scroll;
-  overflow-y: scroll;
-  vertical-align: top;
-}
-
-.programbox td {
-  vertical-align: top;
-}
-
-.programbox td p {
-  text-align: left;
-}
-
-
+/* minimum width 480px */
 .program {
-  width: 60%;
+   /* gray overlay over photos? */
+   background-color: rgba(100,100,100,0.2); /* not working find out why */
+   text-shadow: 0px 1px #000000;
+   
+   min-width: 200px;
+
+   color: rgba(245,245,245, 1);
+   
+   margin: 2% 3%;
+   width: 44%;
+   height: 300px;
+   float: left;
+   overflow: auto;
+
+   border-radius: 20px;
 }
+.overlay {
+   background-color: rgba(255,0,0,1.0);
+}
+
+.program h3 {
+  padding: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-transform: uppercase;
+  font-size: 120%;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+}
+
+.program p {
+   margin: 2% 12%;
+   text-align: justify;
+   font-weight: 300;
+}
+
+
+
+
 
 
 

@@ -1,0 +1,36 @@
+#p-children { 
+  background-image: url("../images/p-children.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  z-index: -1;
+}
+
+#p-youth { 
+
+}
+
+#p-sports {
+  background-image: url("../images/p-sports.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+
+#p-health { 
+  background-image: url("../images/p-health.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+#p-community { 
+  background-image: url("../images/p-community.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+
+}
+
+#p-victoriavillage { 
+  background-image: url("../images/p-victoriavillage.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
