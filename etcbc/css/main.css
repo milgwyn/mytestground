@@ -21,53 +21,9 @@ a:hover {
   color: #363636;
 }
 
-h2 {
-  color: #6D6D6D;
-  text-transform: uppercase;
-  font-size: 130%;
-  font-weight: 400;
-  letter-spacing: 0.2em;
-}
-
-p {
-   font-weight: 100;
-   letter-spacing: 0.05em;
-   line-height: 1.5em;
-}
-
-#main {
- /* overall page design */
- 
-}
-
-.column {
-  /*padding: 5px, 10px, 5px, 10px;*/
-  padding-left: 1%;
-  padding-right: 1%;
-  width: 31%;
-  float: left; /* remove if width < x */
-}
-
-/************
- *
- * Banner 
- *
- ************/
-
-#banner {
-  padding-top:100px; /* to push start down */
-  background-image: url("../images/banner.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-
-  height: 360px; /* height is photo - padding-top */
-
-  color: rgba(255, 255, 255, 0.6);
-}
-
-#banner h1 {
+h1 {
   width: 100%;
-  margin-top: 10px;
+  margin-top: 90px;
   margin-bottom: 50px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -78,11 +34,58 @@ p {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-#banner h2 {
-  color: rgba(255, 255, 255, 0.6);
+h2 {
+  color: #6D6D6D;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+}
+
+p {
+   font-weight: 100;
+   letter-spacing: 0.05em;
+   line-height: 1.5em;
+}
+
+/* Used for 3 column layout */
+.column {
+  /*padding: 5px, 10px, 5px, 10px;*/
+  padding-left: 1%;
+  padding-right: 1%;
+  width: 31%;
+  float: left; 
+}
+
+.quote {
   text-transform: lowercase;
   font-style: oblique;
-  padding-left: 20%;
+  font-size: 1.1em;
+  display: block;
+  width: 25%;
+  right:2%;
+  position: absolute;
+}
+
+/************
+ *
+ * Banner 
+ *
+ ************/
+
+#banner {
+  overflow: auto;
+  background-image: url("../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  height: 460px; /* height is photo - padding-top */
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#banner h2 {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 
@@ -107,7 +110,7 @@ p {
   height: 40px;
 }
 
-#nav .navicon {
+#nav #navlogo {
   margin:0;
 }
 
@@ -139,8 +142,8 @@ p {
  ************/
 
 #footer {
+  overflow: auto;
   width: 100%;
-  height: 200px;
   padding-top: 20px;
   background-color: rgba(38, 38, 38, 0.9);
   color: rgba( 220, 220, 220, 0.8);
@@ -156,11 +159,8 @@ p {
   color: rgba( 200, 200, 200, 0.8);
 }
 
-
-
 #footer p {
-  padding-top: 2px;
-  padding-left: 30px;
+  margin: 2% 5%;
   text-align: left;
   font-weight: 200;
   line-height: 95%;;
@@ -168,10 +168,11 @@ p {
   }
 
 #footer ul {
+  padding-left: 5%; /*table padding to match <p> margin */
   text-align: left;
   list-style: none;
   font-weight: 300;
-  margin-bottom: 2px;
+  margin: 2% 0%;
 }
 
 #footer header {
@@ -262,16 +263,9 @@ p {
  ************/
 
 #main-location {
-  overflow: auto;
+  overflow: auto; /* This allows us to expand the div container */
   text-align: center;
   padding: 20px 0px;
-}
-
-#main-location p {
-/* a bit of a hack..  to add to 31% */
-  width: 21%;
-  padding-left: 5%;
-  padding-right: 5%;
 }
 
 /* used for the schedule */
@@ -297,7 +291,8 @@ p {
 }
 
 #main-location iframe {
-  float: right;
+  margin-top: 10%;
+  width: 100%;
 }
 
 .table-header {
@@ -306,13 +301,17 @@ p {
   border-bottom-style: solid;
 }
 
-.address {
-  text-align: left;
-}
 
 /********** Device Responses ***********/
 @media screen and (max-width: 680px) {
 
+  p {
+   font-weight: 200;
+   letter-spacing: 0.05em;
+   line-height: 1.5em;
+   margin-left: 4%;
+   margin-right: 4%;
+  }
   #nav img {
     float: none;
   }
@@ -328,15 +327,37 @@ p {
     font-size: 1em;
   }
   
-  #main-location p {
-    width: 100%;
+  .column {
+    margin-top: 1%;
+    width: 98%;
+    overflow: auto;
+  }
+  
+  .column iframe {
+    width: 100%; /* override to stretch map */
+  }
+  
+  .program {
+    width: 94%;
+  }
+  
+  #main-location .table-header {
+   text-align: center;
+   font-weight: 600;
+   border-bottom-width: 1px;
+  border-bottom: salmon;
+  border-bottom-style: solid;
   }
   
   #main-location table {
     width: 100%;
+    font-weight: 200;
+    border-spacing: 5px;
   }
   
-  #main-location iframe {
-    width: 100%;
+  #main-location th {
+    font-weight: 200;
+    width: 50%;
   }
+  
 }
