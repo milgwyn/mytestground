@@ -29,7 +29,7 @@ h1 {
   padding-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 150%;
+  font-size: 1.5em;
   letter-spacing: 0.15em;
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -117,7 +117,7 @@ p {
 #nav ul {
   list-style: none; /* remove the bullet points */
   height: auto; /* allows it to expand for smaller displays */
-  line-height: 35px;
+  line-height: 2.5em;
 }
 
 #nav ul li {
@@ -147,7 +147,7 @@ p {
   padding-top: 20px;
   background-color: rgba(38, 38, 38, 0.9);
   color: rgba( 220, 220, 220, 0.8);
-  font-size: 300;
+  font-size: 0.95em;
 }
 
 #footer a {
@@ -199,7 +199,7 @@ p {
    height: 150px;
    margin-left: 15px;
    margin-bottom: 10px;
-   border-radius: 20px;
+   border-radius: 1em;
 }
 
 
@@ -245,7 +245,7 @@ p {
   margin-left: 5%;
   margin-right: 5%;
   text-transform: uppercase;
-  font-size: 120%;
+  font-size: 1.2em;
   font-weight: 400;
   letter-spacing: 0.2em;
 }
