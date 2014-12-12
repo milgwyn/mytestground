@@ -268,11 +268,16 @@ p {
   padding: 20px 0px;
 }
 
+#main-location p {
+  margin-top: 5%;
+}
+
 /* used for the schedule */
 #main-location table {
-  margin: 10px auto 0 auto; /* center div */
+  margin: 1px auto 0 auto; /* center div */
   font-weight: 100;
-  border-spacing: 10px 4px;
+  border-spacing: 4px 14px;
+  width: 100%;
 }
 
 #main-location .table-header {
@@ -291,7 +296,7 @@ p {
 }
 
 #main-location iframe {
-  margin-top: 10%;
+  margin-top: 8%;
   width: 100%;
 }
 
@@ -303,8 +308,30 @@ p {
 
 
 /********** Device Responses ***********/
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 860px) and (min-width: 740px) {
+  
+  #main-location table {
+    margin: 1px auto 0 auto; /* center div */
+    position: relative;
+    right: 20%;
+    width: 280px;
+  }
+  #main-location th {
+    min-width: 170px;
+  }
+  
+  #main-location p {
+    width: 90%;
+  }
+}
 
+@media screen and (max-width: 740px) {
+
+  h2 {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  
   p {
    font-weight: 200;
    letter-spacing: 0.05em;
