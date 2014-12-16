@@ -246,6 +246,11 @@ p {
    border-radius: 20px;
 }
 
+.program:hover {
+   background-color: rgba(100,100,100,0.8); /* not working find out why */
+}
+   
+
 .program h3 {
   padding: 10px;
   margin-left: 5%;
