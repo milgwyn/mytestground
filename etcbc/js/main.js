@@ -23,13 +23,14 @@ function toggleOverlay (e) {
       elShown.querySelector(".activated-overlay").style.display = "none";
       elShown = null;
    }
-   else if ( !elShown && el ) {
-      
-      switch ( el.id ) {
-         case "connect": 
-            elShown = el;
-            overlay.style.display = "initial";
-            break;
+   else if ( !elShown && el) { // inefficient
+    
+      if (overlay) {
+         elShown = el;
+         overlay.style.display = "initial";
+      }
+      else if ( el.id == "warning" ) {
+         el.style.display = "none"
       }
    }
 }
