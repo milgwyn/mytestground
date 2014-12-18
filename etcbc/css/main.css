@@ -239,7 +239,7 @@ p {
    
    margin: 2% 3%;
    width: 44%;
-   height: 240px;
+   height: 200px;
    float: left;
    overflow: auto;
 
@@ -251,7 +251,9 @@ p {
 }
    
 
-.program h3 {
+.program h2 {
+  position: relative;
+  top: 30%;
   padding: 10px;
   margin-left: 5%;
   margin-right: 5%;
