@@ -1,12 +1,19 @@
-$( "#main-programs" ).on('click tap', function ( e ) {
-  var id = e.target.id;
-  var $el = $('#'+id);
+$(document).ready( function() {
 
-  $el.children('.activated-overlay').fadeIn(300).css("display","block");
-//  console.log($el.children('.activated-overlay'));
-});
+    $( "#main-programs" ).on('click', '.program', function ( e ) {
 
-$( '.activated-overlay' ).on('click tap',  function(e) {
-   $(this).fadeOut(300).css("display","none");
-});
+        // Pre-toggle administrative tasks
+        e.stopPropagation(); // stop bubbling dude
+        $('.activated-overlay').css("display", "none");
+
+        $(this).children('.activated-overlay').fadeToggle();
+    });
+
+
+    $( '.activated-overlay' ).on('click tap',  function(e) {
+        e.stopPropagation();
+        $(this).fadeOut(300).css("display","none");
+    });
+
+}
 
