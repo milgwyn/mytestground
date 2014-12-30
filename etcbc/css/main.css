@@ -49,6 +49,8 @@ p {
    font-weight: 100;
    letter-spacing: 0.05em;
    line-height: 1.5em;
+   padding-left: 5%;
+   padding-right: 5%;
 }
 
 /* Used for 3 column layout */
@@ -233,14 +235,12 @@ p {
    background-color: rgba(100,100,100,0.2); 
    text-shadow: 0px 1px #000000;
    
-   min-width: 200px;
+   min-width: 300px;
    min-height: 150px;
 
    color: rgba(245,245,245, 1);
    
    margin: 2% 3%;
-   width: 44%;
-   float: left;
    overflow: auto;
 
    border-radius: 20px;
@@ -253,7 +253,7 @@ p {
 .program h2 {
     /* Assume min-height, and calculate the padding based on this.
      * so 150px height = 75px midline */
-    padding: 70px;
+  padding: 5%;
   text-transform: uppercase;
   font-size: 2.0em;
   font-weight: 400;
@@ -261,13 +261,19 @@ p {
 }
 
 .program p {
-   margin: 2% 12%;
    text-align: justify;
    font-weight: 200;
 }
 
 .program .program-content {
     display: none;
+}
+
+.program-content img {
+    height: 70px;
+    float: right;
+    margin-left: 5px;
+    margin-bottom: 5px;
 }
 
 /************
@@ -496,5 +502,5 @@ only screen and (min-device-pixel-ratio : 2) {
   
   .program-content {
       display: none;
-      }
+  }
 }

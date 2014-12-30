@@ -19,7 +19,18 @@ $(document).ready( function() {
         // Pre-toggle administrative tasks
         e.stopPropagation(); // stop bubbling dude
 
-        $(this).children('.program-content').slideToggle();
+        var $pc = $(this).children('.program-content');
+
+        /*
+        if ( $pc.is(':visible') ) {
+            $(this).children('h2').css("padding","70px");
+        }
+        else {
+            $(this).children('h2').css("padding","5px");
+//            window.scrollBy(0,150); // hacky scroll by 150px so the block shows 
+        }
+        */
+        $pc.slideToggle();
     });
 });
 
