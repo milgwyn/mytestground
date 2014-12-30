@@ -277,6 +277,26 @@ p {
     margin-bottom: 5px;
 }
 
+#inspire {
+    background-image: url(../images/p-inspire.jpg);
+}
+
+#educate {
+    background-image: url(../images/p-educate.jpg);
+}
+
+#connect {
+    background-image:  url(../images/p-connect.jpg);
+}
+
+#engage {
+    background-image:  url(../images/p-engage.jpg);
+}
+
+#discover {
+    background-image:  url(../images/p-discover.jpg);
+}
+
 /************
  *
  * Location 
