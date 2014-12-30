@@ -5,8 +5,6 @@ $(document).ready( function() {
         $(this).fadeOut().css("display","none");
     });
 
-    alert("jquery test.js");
-    
     $( "#main-programs" ).on('click', '.program', function ( e ) {
 
         // Pre-toggle administrative tasks
